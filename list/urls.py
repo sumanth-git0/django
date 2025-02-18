@@ -13,4 +13,6 @@ urlpatterns = [
 
     path('tasks', views.TaskView.as_view(), name='tasks list'),
     path('tasks/edit/<int:pk>', views.TaskView.as_view(), name='edit task'),
+
+    path('chats', views.ChatView.as_view(), name='chats')
 ]
